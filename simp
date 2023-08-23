@@ -1,0 +1,23 @@
+#include <stdlib.h>
+#include <string.h>
+#include <unistd.h>
+#include <stdio.h>
+#include "simple.h"
+
+int main()
+{
+	char *params;
+	size_t params_length;
+	int frames = 1;
+
+	while(frames)
+	{
+		printf("Shell> ");
+		getline(&params, &params_length,stdin);
+		printf("%s/n", params);
+		/*if (*params == "close")
+			break;
+		*/
+	}
+	return (0);
+}
