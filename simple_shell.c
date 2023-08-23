@@ -109,7 +109,6 @@ int main() {
                 waitpid(pid, &status, 0);
             }
         }
-	move_cursor(1, 2); /* Move cursor to the next line */
 
     }
 
